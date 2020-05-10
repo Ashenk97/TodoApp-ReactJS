@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+/*Background Animation*/
+body{
+  margin:0;
+  padding:0;
+  font-family:"arial",heletica,sans-serif;
+  font-size:12px;
+  background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@-webkit-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@-moz-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@-ms-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@-o-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+/*Class CLS1 customization*/
+
+.CLS1{
+  background-image: linear-gradient(-180deg, #2980b9, darkturquoise);
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 15px;
+  border: gold;
+  border-style: double;
+}
+
+#to-do-form1 input{
+  background-color: darkslateblue;
+  font-size: 18px;
   color: white;
+  box-sizing: border-box;
+  padding: 7px;
+  outline: none;
+  border-radius: 12px;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#to-do-form1 input::placeholder{
+  color: gold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#to-do-form1 input:focus{
+  outline: none;
 }
+
+#to-do-form1 button{
+  height: 40px;
+  width: 70px;
+  border-radius: 7px;
+  border: 0;
+  background-color: darkslateblue;
+  cursor: pointer;
+  color: gold;
+  font-size: 18px;
+}
+
+#to-do-form1 button:hover {
+  background-color: purple;
+  color: gold;
+}
+
+#to-do-form1 h1{
+  color: yellow;
+  font-size: 50px;
+  margin: 0 80px;
+}
+
